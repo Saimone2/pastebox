@@ -6,7 +6,6 @@ import com.saimone.pastebox.api.response.PasteboxResponse;
 import com.saimone.pastebox.model.PasteboxEntity;
 import com.saimone.pastebox.repository.PasteboxRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -17,8 +16,6 @@ import java.util.stream.Collectors;
 @Service
 @RequiredArgsConstructor
 public class PasteboxServiceImpl implements PasteboxService {
-
-    private int publicListSize;
 
     private final PasteboxRepository repository;
     private final AtomicLong idGenerator = new AtomicLong(0);

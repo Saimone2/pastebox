@@ -1,6 +1,6 @@
 package com.saimone.pastebox.api.request;
 
-public enum PublicStatus {
+public enum PasteboxStatus {
     PUBLIC,
     UNLISTED
 }

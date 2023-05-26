@@ -17,7 +17,7 @@ public class PasteboxRepositoryMap implements PasteboxRepository{
 
     private final Map<String, PasteboxEntity> vault = new ConcurrentHashMap<>();
     @Override
-    public PasteboxEntity geByHash(String hash) {
+    public PasteboxEntity getByHash(String hash) {
         PasteboxEntity pasteboxEntity = vault.get(hash);
         if(pasteboxEntity == null) {
             throw new NotFoundEntityException("Pastebox not found with hash = " + hash);

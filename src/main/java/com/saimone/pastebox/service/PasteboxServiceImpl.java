@@ -22,7 +22,7 @@ public class PasteboxServiceImpl implements PasteboxService {
 
     @Override
     public PasteboxResponse getByHash(String hash) {
-        PasteboxEntity pasteboxEntity = repository.geByHash(hash);
+        PasteboxEntity pasteboxEntity = repository.getByHash(hash);
         return new PasteboxResponse(pasteboxEntity.getData(), pasteboxEntity.getPasteboxStatus());
     }
 

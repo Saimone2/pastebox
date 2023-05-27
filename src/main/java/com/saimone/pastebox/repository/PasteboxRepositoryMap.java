@@ -14,7 +14,6 @@ import java.util.stream.Collectors;
 
 @Repository
 public class PasteboxRepositoryMap implements PasteboxRepository{
-
     private final Map<String, PasteboxEntity> vault = new ConcurrentHashMap<>();
     @Override
     public PasteboxEntity getByHash(String hash) {

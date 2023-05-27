@@ -6,6 +6,7 @@ import com.saimone.pastebox.api.response.PasteboxResponse;
 import com.saimone.pastebox.model.PasteboxEntity;
 import com.saimone.pastebox.repository.PasteboxRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -15,10 +16,11 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
+@Setter
 public class PasteboxServiceImpl implements PasteboxService {
 
     private final PasteboxRepository repository;
-    private final AtomicLong idGenerator = new AtomicLong(0);
+    private AtomicLong idGenerator = new AtomicLong(0);
 
     @Override
     public PasteboxResponse getByHash(String hash) {

@@ -9,5 +9,5 @@ import java.util.List;
 public interface PasteboxService {
     PasteboxResponse getByHash(String hash);
     List<PasteboxResponse> getFirstPublicPasteboxes();
-    PasteBoxUrlResponse create(PasteboxRequest pasteBoxRequest);
+    PasteBoxUrlResponse create(PasteboxRequest request);
 }

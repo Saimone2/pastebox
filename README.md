@@ -12,6 +12,6 @@ public - available to everyone
 unlisted - available only by link
 
 For the downloaded paste, a short link of the form is displayed:
-http://site/(some random hash), e.g. /ab12cd34
+http:// domain /(some random hash), e.g. /ab12cd34
 
 Users can get information in the last 10 uploaded public "pastes".
